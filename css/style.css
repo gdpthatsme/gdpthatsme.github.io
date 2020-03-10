@@ -1,76 +1,5 @@
 
 body {
-  <div class="wrapper">
-  <div id="menu" onmouseover="smallerKomadas();" onmouseout="largerKomadas();" onclick="changeKodamas();">Click Here To
-    Randomize</div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-  <div class="kodamaDiv" onclick="kodamaFunc(event);">
-    <div class="faceDiv">
-      <div class="eyeDiv"></div>
-      <div class="eyeDiv"></div>
-      <div class="mouthDiv"></div>
-    </div>
-  </div>
-</div>
-
-
-
-Resources
   background-color: black;
 }
 .wrapper {
@@ -202,7 +131,3 @@ Resources
     transform: rotate(45deg);
   }
 }
-
-
-
-Resources
