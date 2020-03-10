@@ -1,133 +1,31 @@
 
 body {
-  background-color: black;
+  margin: 0;
 }
-.wrapper {
-  position: absolute;
-  width: 60vh;
-  height: 60vh;
-  top: 50%;
-  left: 50%;
-  margin-top: -30vh;
-  margin-left: -30vh;
+#app {
+  width: 100vw;
+  height: 100vh;
 }
-.kodamaDiv {
-  width: 15vh;
-  height: 15vh;
-  margin: 2.5vh;
-  border-radius: 50%;
-  background-color: #000000;
-  float: left;
-  transform: rotate(45deg);
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 0 0 0 black inset, -2vh 0 0 0 black inset, 0 0 2vh 0 black;
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 0s,
-    box-shadow 300ms ease-in-out 0s, border-radius 300ms ease-in-out 300ms,
-    background-color 300ms ease-in-out 0s;
+
+.star {
+  animation: move 20s linear infinite;
 }
-.kodamaDiv:hover {
-  opacity: 1;
+
+.shootingStar {
+  animation: dash 0.7s ease;
 }
-.kodamaDiv:nth-of-type(3) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 10ms,
-    box-shadow 300ms ease-in-out 10ms, border-radius 300ms ease-in-out 310ms,
-    background-color 300ms ease-in-out 10ms;
-}
-.kodamaDiv:nth-of-type(4) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 20ms,
-    box-shadow 300ms ease-in-out 20ms, border-radius 300ms ease-in-out 320ms,
-    background-color 300ms ease-in-out 20ms;
-}
-.kodamaDiv:nth-of-type(5) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 30ms,
-    box-shadow 300ms ease-in-out 30ms, border-radius 300ms ease-in-out 330ms,
-    background-color 300ms ease-in-out 30ms;
-}
-.kodamaDiv:nth-of-type(6) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 40ms,
-    box-shadow 300ms ease-in-out 40ms, border-radius 300ms ease-in-out 340ms,
-    background-color 300ms ease-in-out 40ms;
-}
-.kodamaDiv:nth-of-type(7) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 50ms,
-    box-shadow 300ms ease-in-out 50ms, border-radius 300ms ease-in-out 350ms,
-    background-color 300ms ease-in-out 50ms;
-}
-.kodamaDiv:nth-of-type(8) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 60ms,
-    box-shadow 300ms ease-in-out 60ms, border-radius 300ms ease-in-out 360ms,
-    background-color 300ms ease-in-out 60ms;
-}
-.kodamaDiv:nth-of-type(9) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 70ms,
-    box-shadow 300ms ease-in-out 70ms, border-radius 300ms ease-in-out 370ms,
-    background-color 300ms ease-in-out 70ms;
-}
-.kodamaDiv:nth-of-type(10) {
-  transition: opacity 150ms linear 0s, transform 300ms ease-in-out 80ms,
-    box-shadow 300ms ease-in-out 80ms, border-radius 300ms ease-in-out 380ms,
-    background-color 300ms ease-in-out 80ms;
-}
-.eyeDiv,
-.mouthDiv {
-  position: absolute;
-  width: 1.5vh;
-  height: 1.5vh;
-  top: 5vh;
-  left: 3vh;
-  /* box-shadow: 0 0 .15vh .15vh black; */
-  border-radius: 50%;
-  background-color: black;
-  transition: background-color 300ms ease-in-out 0s,
-    transform 300ms ease-in-out 0s;
-}
-.eyeDiv:nth-of-type(2) {
-  left: 10vh;
-}
-.mouthDiv {
-  top: 10vh;
-  left: 7vh;
-}
-.faceDiv {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  transform: rotate(-45deg);
-}
-#menu {
-  position: absolute;
-  top: -7vh;
-  width: 100%;
-  color: #c5c5c5;
-  text-align: center;
-  /* font-family: sans-serif; */
-  font-family: "Work Sans", sans-serif;
-  font-size: 5vh;
-  transition: color 300ms linear 0s;
-  cursor: pointer;
-}
-#menu:hover {
-  color: white;
-}
-.openKodama {
-  animation: kodamaShake 500ms linear;
-}
-@keyframes kodamaShake {
-  0% {
-    transform: rotate(45deg);
+
+@keyframes move {
+  from {
+    transform: translate(0%, 0%);
   }
-  70% {
-    transform: rotate(0deg);
+  to {
+    transform: translate(-100%, 100%);
   }
-  80% {
-    transform: rotate(65deg);
-  }
-  90% {
-    transform: rotate(25deg);
-  }
-  100% {
-    transform: rotate(45deg);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -227.62;
   }
 }
